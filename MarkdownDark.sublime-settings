@@ -1,6 +1,6 @@
 {
     // Sets the colors used within the text area
-	"color_scheme": "Packages/MarkdownLight/MarkdownLight.tmTheme",
+	"color_scheme": "Packages/MarkdownDark/MarkdownDark.tmTheme",
 
     // Set to true to insert spaces when tab is pressed
 	"translate_tabs_to_spaces": true,

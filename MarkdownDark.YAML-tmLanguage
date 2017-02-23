@@ -1,5 +1,5 @@
 # [PackageDev] target_format: plist, ext: tmLanguage
-name: Markdown Light
+name: Markdown Dark
 scopeName: text.html.markdown
 fileTypes: [mdown, markdown, markdn, md]
 uuid: 0A1D9875-B448-11D9-BD50-000D93B6E43C
