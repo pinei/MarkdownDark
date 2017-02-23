@@ -24,7 +24,6 @@ Dark color scheme
 
 ![](demo/demo_dark.png)
 
-
 Based on Sergey Kogan MarkdownLight
 
 * https://packagecontrol.io/packages/MarkdownLight

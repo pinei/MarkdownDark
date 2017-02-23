@@ -41,6 +41,17 @@ function getFizzBuzz(n) {
 
    *   *   *
 
+### List items, Maps and Tables
+
+- Todo item
++ This item is done
+* Information
+
+Pilsen → 10 IBU
+IPA → 50 IBU
+
+| Brazil | +55 |
+| USA    | +1  |
 
 ### The influence on `O(n^2)` algorithms
 

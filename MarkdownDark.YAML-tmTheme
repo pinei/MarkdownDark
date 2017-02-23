@@ -246,6 +246,24 @@ settings:
     fontStyle: bold
     foreground: '#6D9CBE'
 
+- name: punctuation.definition.todo_list_item.markdown
+  scope: punctuation.definition.todo_list_item.markdown
+  settings:
+    fontStyle: bold
+    foreground: '#FF0033'
+
+- name: punctuation.definition.done_list_item.markdown
+  scope: punctuation.definition.done_list_item.markdown
+  settings:
+    fontStyle: bold
+    foreground: '#33AFFF'
+
+- name: punctuation.definition.info_list_item.markdown
+  scope: punctuation.definition.info_list_item.markdown
+  settings:
+    fontStyle: bold
+    foreground: '#FF9033'
+
 - name: Quotes
   scope: markup.quote
   settings:

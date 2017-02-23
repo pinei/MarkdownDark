@@ -126,6 +126,30 @@
 				</dict>
 			</array>
 		</dict>
+		<key>done_list_item</key>
+		<dict>
+			<key>begin</key>
+			<string>^\s*([+])[ ]</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.done_list_item.markdown</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?=\s*(?:[*+-]|\d+\.)[ ]|\s*```\s*[^\s`]*\s*$|\s*$)</string>
+			<key>name</key>
+			<string>meta.paragraph.list.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#inline</string>
+				</dict>
+			</array>
+		</dict>
 		<key>email</key>
 		<dict>
 			<key>captures</key>
@@ -982,6 +1006,30 @@
 			<key>name</key>
 			<string>meta.link.reference.literal.markdown</string>
 		</dict>
+		<key>info_list_item</key>
+		<dict>
+			<key>begin</key>
+			<string>^\s*([*])[ ]</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.info_list_item.markdown</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?=\s*(?:[*+-]|\d+\.)[ ]|\s*```\s*[^\s`]*\s*$|\s*$)</string>
+			<key>name</key>
+			<string>meta.paragraph.list.markdown</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#inline</string>
+				</dict>
+			</array>
+		</dict>
 		<key>inline</key>
 		<dict>
 			<key>patterns</key>
@@ -1191,7 +1239,15 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#unnumbered_list_item</string>
+					<string>#todo_list_item</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#done_list_item</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#info_list_item</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -1547,16 +1603,16 @@
 				</dict>
 			</array>
 		</dict>
-		<key>unnumbered_list_item</key>
+		<key>todo_list_item</key>
 		<dict>
 			<key>begin</key>
-			<string>^\s*([*+-])[ ]</string>
+			<string>^\s*([-])[ ]</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.list_item.markdown</string>
+					<string>punctuation.definition.todo_list_item.markdown</string>
 				</dict>
 			</dict>
 			<key>end</key>

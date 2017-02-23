@@ -113,15 +113,35 @@ repository:
     end: ^(?=\s*([*+-]|\d+\.)[ ]|\S)
     patterns:
     - include: '#numbered_list_item'
-    - include: '#unnumbered_list_item'
+    - include: '#todo_list_item'
+    - include: '#done_list_item'
+    - include: '#info_list_item'
     - include: '#fenced_block'
     - include: '#list_item_continuation'
 
-  unnumbered_list_item:
+  todo_list_item:
     name: meta.paragraph.list.markdown
-    begin: ^\s*([*+-])[ ]
+    begin: ^\s*([-])[ ]
     beginCaptures:
-      '1': {name: punctuation.definition.list_item.markdown}
+      '1': {name: punctuation.definition.todo_list_item.markdown}
+    end: ^(?=\s*(?:[*+-]|\d+\.)[ ]|\s*```\s*[^\s`]*\s*$|\s*$)
+    patterns:
+    - include: '#inline'
+
+  done_list_item:
+    name: meta.paragraph.list.markdown
+    begin: ^\s*([+])[ ]
+    beginCaptures:
+      '1': {name: punctuation.definition.done_list_item.markdown}
+    end: ^(?=\s*(?:[*+-]|\d+\.)[ ]|\s*```\s*[^\s`]*\s*$|\s*$)
+    patterns:
+    - include: '#inline'
+
+  info_list_item:
+    name: meta.paragraph.list.markdown
+    begin: ^\s*([*])[ ]
+    beginCaptures:
+      '1': {name: punctuation.definition.info_list_item.markdown}
     end: ^(?=\s*(?:[*+-]|\d+\.)[ ]|\s*```\s*[^\s`]*\s*$|\s*$)
     patterns:
     - include: '#inline'
