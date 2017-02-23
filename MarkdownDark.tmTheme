@@ -338,7 +338,85 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Headings</string>
+			<string>Heading 1</string>
+			<key>scope</key>
+			<string>markup.heading.1</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#FFFF00</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Heading 2</string>
+			<key>scope</key>
+			<string>markup.heading.2</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#ffd000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Heading 3</string>
+			<key>scope</key>
+			<string>markup.heading.3</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#ffb000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Heading 4</string>
+			<key>scope</key>
+			<string>markup.heading.4</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#ffa000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Heading 5</string>
+			<key>scope</key>
+			<string>markup.heading.5</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#ff9000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Heading 6</string>
+			<key>scope</key>
+			<string>markup.heading.6</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string>bold</string>
+				<key>foreground</key>
+				<string>#FF8000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Heading</string>
 			<key>scope</key>
 			<string>markup.heading</string>
 			<key>settings</key>
@@ -550,7 +628,7 @@
 				<key>fontStyle</key>
 				<string>bold</string>
 				<key>foreground</key>
-				<string>#FF9033</string>
+				<string>#c033e0</string>
 			</dict>
 		</dict>
 		<dict>

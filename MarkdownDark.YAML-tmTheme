@@ -163,7 +163,43 @@ settings:
   settings:
     foreground: '#cc7832'
 
-- name: Headings
+- name: Heading 1
+  scope: markup.heading.1
+  settings:
+    fontStyle: bold
+    foreground: '#FFFF00'
+
+- name: Heading 2
+  scope: markup.heading.2
+  settings:
+    fontStyle: bold
+    foreground: '#ffd000'
+
+- name: Heading 3
+  scope: markup.heading.3
+  settings:
+    fontStyle: bold
+    foreground: '#ffb000'
+
+- name: Heading 4
+  scope: markup.heading.4
+  settings:
+    fontStyle: bold
+    foreground: '#ffa000'
+
+- name: Heading 5
+  scope: markup.heading.5
+  settings:
+    fontStyle: bold
+    foreground: '#ff9000'
+
+- name: Heading 6
+  scope: markup.heading.6
+  settings:
+    fontStyle: bold
+    foreground: '#FF8000'
+
+- name: Heading
   scope: markup.heading
   settings:
     fontStyle: bold
@@ -262,7 +298,7 @@ settings:
   scope: punctuation.definition.info_list_item.markdown
   settings:
     fontStyle: bold
-    foreground: '#FF9033'
+    foreground: '#c033e0'
 
 - name: Quotes
   scope: markup.quote

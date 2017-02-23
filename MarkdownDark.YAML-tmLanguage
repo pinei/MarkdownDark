@@ -24,7 +24,12 @@ repository:
     - include: '#quoted_block'
     - include: '#horizontal_rule'
     - include: '#reference'
-    - include: '#heading'
+    - include: '#heading_1'
+    - include: '#heading_2'
+    - include: '#heading_3'
+    - include: '#heading_4'
+    - include: '#heading_5'
+    - include: '#heading_6'
     - include: '#list_item'
     - include: '#html_block'
     - include: '#maybe_setext_heading'
@@ -45,7 +50,7 @@ repository:
     end: ^(?!(?:={3,}|-{3,})\s*$)
     patterns:
     - include: '#setext_heading_1'
-    - include: '#setext_heading_2'
+    - include: '#setext_heading_6'
     - include: '#inline'
 
   setext_heading_1:
@@ -53,10 +58,10 @@ repository:
     captures:
       '1': {name: markup.heading.1.markdown punctuation.definition.heading.markdown}
 
-  setext_heading_2:
+  setext_heading_6:
     match: ^(-{3,})\s*$
     captures:
-      '1': {name: markup.heading.2.markdown punctuation.definition.heading.markdown}
+      '1': {name: markup.heading.6.markdown punctuation.definition.heading.markdown}
 
   horizontal_rule:
     name: meta.separator.markdown
@@ -81,10 +86,60 @@ repository:
       '14': {name: string.other.link.description.title.markdown}
       '15': {name: punctuation.definition.string.end.markdown}
 
-  heading:
-    name: markup.heading.markdown
+  heading_1:
+    name: markup.heading.1.markdown
     contentName: entity.name.section.markdown
-    begin: ^(#{1,6})(?!#)\s*
+    begin: ^(#{1})(?!#)\s*
+    end: \s*(#*)$
+    captures:
+      '1': {name: punctuation.definition.heading.markdown}
+    patterns:
+    - include: '#inline'
+
+  heading_2:
+    name: markup.heading.2.markdown
+    contentName: entity.name.section.markdown
+    begin: ^(#{2})(?!#)\s*
+    end: \s*(#*)$
+    captures:
+      '1': {name: punctuation.definition.heading.markdown}
+    patterns:
+    - include: '#inline'
+
+  heading_3:
+    name: markup.heading.3.markdown
+    contentName: entity.name.section.markdown
+    begin: ^(#{3})(?!#)\s*
+    end: \s*(#*)$
+    captures:
+      '1': {name: punctuation.definition.heading.markdown}
+    patterns:
+    - include: '#inline'
+
+  heading_4:
+    name: markup.heading.4.markdown
+    contentName: entity.name.section.markdown
+    begin: ^(#{4})(?!#)\s*
+    end: \s*(#*)$
+    captures:
+      '1': {name: punctuation.definition.heading.markdown}
+    patterns:
+    - include: '#inline'
+
+  heading_5:
+    name: markup.heading.5.markdown
+    contentName: entity.name.section.markdown
+    begin: ^(#{5})(?!#)\s*
+    end: \s*(#*)$
+    captures:
+      '1': {name: punctuation.definition.heading.markdown}
+    patterns:
+    - include: '#inline'
+
+  heading_6:
+    name: markup.heading.6.markdown
+    contentName: entity.name.section.markdown
+    begin: ^(#{6})(?!#)\s*
     end: \s*(#*)$
     captures:
       '1': {name: punctuation.definition.heading.markdown}
