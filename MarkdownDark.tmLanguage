@@ -1104,6 +1104,14 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#table_bar</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#map_arrow</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>text.html.basic</string>
 				</dict>
 			</array>
@@ -1281,6 +1289,13 @@
 			<string>  +$</string>
 			<key>name</key>
 			<string>meta.dummy.line-break</string>
+		</dict>
+		<key>map_arrow</key>
+		<dict>
+			<key>match</key>
+			<string>([→←])</string>
+			<key>name</key>
+			<string>punctuation.separator.map-arrow.markdown</string>
 		</dict>
 		<key>maybe_setext_heading</key>
 		<dict>
@@ -1602,6 +1617,13 @@
 					<string>#inline</string>
 				</dict>
 			</array>
+		</dict>
+		<key>table_bar</key>
+		<dict>
+			<key>match</key>
+			<string>([|])</string>
+			<key>name</key>
+			<string>punctuation.separator.table-bar.markdown</string>
 		</dict>
 		<key>todo_list_item</key>
 		<dict>

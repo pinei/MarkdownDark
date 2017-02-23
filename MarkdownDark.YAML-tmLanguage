@@ -186,6 +186,8 @@ repository:
     - include: '#manual_line_break'
     - include: '#valid_ampersand'
     - include: '#valid_bracket'
+    - include: '#table_bar'
+    - include: '#map_arrow'
     - include: text.html.basic
 
   escape:
@@ -428,6 +430,14 @@ repository:
   valid_bracket:
     match: (?i)<(?![a-z\d?%:!]|/[a-z\d])
     name: meta.other.valid-bracket.markdown
+
+  table_bar:
+    match: '([|])'
+    name: punctuation.separator.table-bar.markdown
+
+  map_arrow:
+    match: '([→←])'
+    name: punctuation.separator.map-arrow.markdown    
 
 # --- /inline ---
 

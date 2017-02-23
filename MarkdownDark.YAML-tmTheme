@@ -354,3 +354,13 @@ settings:
   settings:
     background: '#c5c8c6'
     foreground: '#1d1f21'
+
+- name: Table Bar
+  scope: punctuation.separator.table-bar.markdown
+  settings:
+    foreground: '#00FF80'
+
+- name: Map Arrow
+  scope: punctuation.separator.map-arrow.markdown
+  settings:
+    foreground: '#00FF80'

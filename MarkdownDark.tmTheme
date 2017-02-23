@@ -752,6 +752,28 @@
 				<string>#1d1f21</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>Table Bar</string>
+			<key>scope</key>
+			<string>punctuation.separator.table-bar.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00FF80</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Map Arrow</string>
+			<key>scope</key>
+			<string>punctuation.separator.map-arrow.markdown</string>
+			<key>settings</key>
+			<dict>
+				<key>foreground</key>
+				<string>#00FF80</string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>ebc57c0b-55c1-474f-b01b-e7fe2979b25f</string>
