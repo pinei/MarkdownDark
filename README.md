@@ -15,7 +15,9 @@ Features
 Installation
 ------------
 
-Just clone the repository to the Sublime *"Packages"* directory.
+Just clone the repository to Sublime *"Packages"* directory and restart Sublime.
+
+Click "Preferences" > "Browse Packages" to find the directory.
 
 Demo
 ----
