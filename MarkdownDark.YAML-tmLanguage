@@ -165,7 +165,7 @@ repository:
 
   list_item:
     begin: ^(?=\s*([*+-]|\d+\.)[ ])
-    end: ^(?=\s*([*+-]|\d+\.)[ ]|\S)
+    end: $
     patterns:
     - include: '#numbered_list_item'
     - include: '#todo_list_item'
