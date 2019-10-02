@@ -26,10 +26,12 @@
 	<dict>
 		<key>block</key>
 		<dict>
+			<key>name</key>
+			<string>block</string>
 			<key>begin</key>
 			<string>^(?=\s*+\S)</string>
 			<key>end</key>
-			<string>^(?=\s*+$)</string>
+			<string>^(?=\s*$)</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1182,6 +1184,7 @@
 		</dict>
 		<key>inline</key>
 		<dict>
+			<!-- marcacao -->
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1385,6 +1388,9 @@
 		</dict>
 		<key>list_item</key>
 		<dict>
+			<!-- marcacao -->
+			<key>name</key>
+			<string>list_item</string>
 			<key>begin</key>
 			<string>^(?=\s*([*+-]|\d+\.)[ ])</string>
 			<key>end</key>
@@ -1449,10 +1455,12 @@
 		</dict>
 		<key>maybe_setext_heading</key>
 		<dict>
+			<key>name</key>
+			<string>maybe_setext_heading</string>
 			<key>begin</key>
 			<string>^(?!\s*$|(?:={3,}|-{3,}))</string>
 			<key>end</key>
-			<string>^(?!(?:={3,}|-{3,})\s*$)</string>
+			<string>$</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1530,6 +1538,8 @@
 		</dict>
 		<key>reference</key>
 		<dict>
+			<key>name</key>
+			<string>reference</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
